@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;400;800&family=Noto+Sans:wght@400;800&family=Roboto:ital,wght@0,300;0,400;1,300;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  height: 5rem;
+}
+
+header #navbar {
+  display: flex;
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.93rem;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 550;
+  font-size: 1.25rem;
+}
+
+.nav-list a:hover {
+  color: rgb(175, 177, 177);
+  transition: 0.3s;
+}
+
+header #navbar .menu {
+  display: none;
+}
+
+/* SECTION BANNER */
+
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+main .banner-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  margin-bottom: 2.5rem;
+}
+
+main .banner-p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  max-width: 31.25rem;
+  margin-bottom: 2.37rem;
+}
+
+#banner .btn {
+  background-color: #00a8cc;
+  border-radius: 2px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+}
+
+#banner .btn:hover {
+  background-color: rgb(46, 147, 242);
+  transition: 2s;
+}
+
+main .banner-img {
+  border-radius: 50%;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main .banner-content {
+    text-align: center;
+  }
+}
+
+/* SECTION POSTS */
+
+#posts {
+  margin-top: 4rem;
+  height: 100%;
+  background-color: #edf7fa;
+}
+
+#posts .posts-content {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 2rem;
+}
+
+#posts .posts-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+#posts .section-title {
+  font-size: 1.38rem;
+  font-weight: 500;
+}
+
+#posts .view-all {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+#posts .posts-cards {
+  display: flex;
+  gap: 1.25rem;
+  /*margin-bottom: 2rem;*/
+  justify-content: space-between;
+}
+
+#posts .post-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  max-width: 33rem;
+}
+
+#posts .post-card a {
+  text-decoration: none;
+  font-size: 1.63rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+#posts .post-card span {
+  display: block;
+  font-size: 1.13rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 740px) {
+  #posts .posts-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header #navbar .menu {
+    display: block;
+  }
+
+  header #navbar .nav-list {
+    display: none;
+  }
+}
