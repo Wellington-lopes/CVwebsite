@@ -1,7 +1,5 @@
 # Static Resume Website in HTML and CSS
 
-![Resume](resume.png)
-
 This is a static website project that showcases a personal resume built using HTML and CSS. This interactive resume provides detailed information about your experience, education, and skills in an elegant and easy-to-read format.
 
 ## Preview
